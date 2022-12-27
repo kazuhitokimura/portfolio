@@ -1,2 +1,64 @@
-$primary: #49240F;
-$secondary: #E4A79D;
+/*primitive*/
+
+/*blue*/
+$blue-50: #e7edff;
+$blue-100: #d3dfff;
+$blue-200: #adc1f9;
+$blue-300: #779bfd;
+$blue-400: #4677ff;
+$blue-500: #285ef4;
+$blue-600: #184ad3;
+$blue-700: #19398f;
+$blue-800: #001d6c;
+$blue-900: #00103a;
+
+/*yellow*/
+$yellow-50: #f5f4ee;
+$yellow-100: #faf4de;
+$yellow-200: #ffeea8;
+$yellow-300: #ffe682;
+$yellow-400: #f1cc53;
+$yellow-500: #d4ae30;
+$yellow-600: #b28c0e;
+$yellow-700: #765f01;
+$yellow-800: #51430b;
+$yellow-900: #261f00;
+
+/*gray*/
+$gray-50: #f6f8fa;
+$gray-100: #eaeef2;
+$gray-200: #d0d7de;
+$gray-300: #afb8c1;
+$gray-400: #8c959f;
+$gray-500: #6e7781;
+$gray-600: #57606a;
+$gray-700: #424a53;
+$gray-800: #32383f;
+$gray-900: #24292f;
+
+/*semantics*/
+
+/*bg*/
+$bg-white: #ffffff;
+$bg-yellow: $yellow-50;
+
+/*surface*/
+$surface-white: #ffffff;
+
+/*border*/
+$border-yellow: $yellow-100;
+
+/*brand*/
+$brand-main: $yellow-300;
+
+/*text*/
+$text-main: $yellow-900;
+$text-sub: $yellow-700;
+$text-link: $blue-600;
+
+/*focused*/
+$focused-default: $yellow-400;
+
+/*overlay*/
+$overlay-hover: rgba(0, 0, 0, 0.04);
+$overlay-pressed: rgba(0, 0, 0, 0.08);
