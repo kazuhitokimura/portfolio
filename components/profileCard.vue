@@ -46,6 +46,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 80px;
   padding: 80px 80px 100px 80px;
   max-width: 640px;
   border: 1px solid $border-yellow;
