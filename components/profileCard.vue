@@ -1,33 +1,36 @@
 <template>
-    <div class="profile-card">
-        <h1>Kazuhito Kimura</h1>
-        <h2>Designer</h2>
-        <ul class="social-btn">
-          <li>
-            <SocialBtn />
-          </li>
-          <li>
-            <SocialBtn />
-          </li>
-          <li>
-            <SocialBtn />
-          </li>
-        </ul>
-    </div>
+  <div class="profile-card">
+    <h1>Kazuhito Kimura</h1>
+    <h2>Designer</h2>
+    <ul class="social-btn">
+      <li>
+        <SocialBtn />
+      </li>
+      <li>
+        <SocialBtn />
+      </li>
+      <li>
+        <SocialBtn />
+      </li>
+    </ul>
+  </div>
+
 </template>
 
 <style lang="scss" scoped>
 h1 {
   font-family: $EN-sans-serif;
   text-align: center;
+  color: $text-main;
 }
 
 h2 {
   font-family: $EN-serif;
   text-align: center;
+  color: $text-sub;
 }
 
-ul{
+ul {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -37,16 +40,18 @@ ul{
 
 li {
   list-style: none;
-  width: auto;
 }
+
 .profile-card {
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 80px 80px 100px 80px;
-  max-width: 480px;
+  max-width: 640px;
   border: 1px solid $border-yellow;
+  background-color: $bg-white;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
   border-radius: 16px;
+  box-sizing: border-box;
 }
 </style>

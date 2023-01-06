@@ -12,6 +12,7 @@
     "ress": "^5.0.2"
   },
   "dependencies": {
+    "destyle.css": "^4.0.0",
     "normalize.css": "^8.0.1",
     "sass": "^1.57.1"
   }

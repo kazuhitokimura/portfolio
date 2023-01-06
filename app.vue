@@ -1,8 +1,5 @@
 <template>
   <div>
-    <ProfileCard />
+    <NuxtPage />
   </div>
 </template>
-
-<style>
-</style>
