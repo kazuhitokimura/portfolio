@@ -1,10 +1,10 @@
 <template>
-  <button><h3>ボタンだよ</h3></button>
+  <button><img alt="twitter" src="../assets/img/Twitter.png"></button>
 </template>
 
 <style lang="scss" scoped>
-button {
-  font-family: $JP-sans-serif;
-  color: $yellow-500;
+img {
+  width: 64px;
+  height: 64px;
 }
 </style>
