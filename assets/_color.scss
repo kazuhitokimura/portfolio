@@ -55,6 +55,7 @@ $brand-main: $yellow-300;
 $text-main: $yellow-900;
 $text-sub: $yellow-700;
 $text-link: $blue-600;
+$text-white: #ffffff;
 
 /*focused*/
 $focused-default: $blue-400;
@@ -62,4 +63,4 @@ $focused-light: $blue-200;
 
 /*overlay*/
 $overlay-hover: rgba(0, 0, 0, 0.04);
-$overlay-pressed: rgba(0, 0, 0, 0.08);
+$overlay-pressed: rgba(0, 0, 0, 0.8);

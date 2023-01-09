@@ -12,14 +12,16 @@ export default defineNuxtConfig({
   app: {
     head: {
       title: "kazuhitokimura",
+      charset: "utf-8",
+      viewport: "width=device-width",
       meta: [
-        {charset: "utf-8"},
-        {name: "viewport", content: "width=device-width"}
+        { name: 'description', content: '木村一仁のポートフォリオ' },
+        { hid: 'og:image', property: 'og:image', content: '' }
       ],
       link: [
-        {rel: "icon", type: "image/x-icon", href: "favicon.ico"},
-        {rel: "stylesheet" , href: "https://cdn.jsdelivr.net/gh/filipelinhares/ress@latest/dist/ress.min.css"}
+        { rel: "icon", type: "image/png", href: "/favicon.png" },
+        { rel: "stylesheet" , href: "https://cdn.jsdelivr.net/gh/filipelinhares/ress@latest/dist/ress.min.css" }
       ],
-    }
+  }
   }
 })
