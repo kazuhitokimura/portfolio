@@ -39,7 +39,7 @@ button {
     }
 
     &:active {
-      opacity: 0.12;
+      opacity: 0.16;
     }
   }
 
