@@ -39,7 +39,7 @@ ul {
   flex-direction: row;
   padding: 0px;
   gap: 64px;
-  margin-top: 56px;
+  margin-top: 48px;
 }
 
 li {

@@ -16,7 +16,7 @@ button {
   border-radius: 32px;
 
   &:focus-visible {
-    outline: 4px solid $focused-light;
+    outline: 2px solid $focused-default;
     outline-offset: 2px;
   }
 
