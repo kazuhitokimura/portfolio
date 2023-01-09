@@ -6,5 +6,9 @@
 img {
   width: 64px;
   height: 64px;
+  border-radius: 32px;
+}
+:focus-visible{
+  border-radius: 4px solid $focused-light;
 }
 </style>
