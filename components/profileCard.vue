@@ -5,13 +5,13 @@
     <h2>Designer</h2>
     <ul>
       <li>
-        <SocialBtn />
+        <SocialBtn img="../assets/img/Twitter.png" alt= "twitter" to= "https://twitter.com/kimurasu02" />
       </li>
       <li>
-        <SocialBtn />
+        <SocialBtn img="../assets/img/note.png" alt= "note" to= "https://note.com/kazhto43" />
       </li>
       <li>
-        <SocialBtn />
+        <SocialBtn img="../assets/img/github.png" alt= "github" to= "https://github.com/kazuhitokimura" />
       </li>
     </ul>
   </div>

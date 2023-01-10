@@ -1,6 +1,30 @@
+<script setup lang="ts">
+
+interface Props {
+  img: string;
+  alt: string;
+  to: string;
+  size: number;
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  img: "/",
+  alt: "",
+  to: "",
+  size: 64,
+});
+
+const openLink = () => {
+  openLink(); {
+      window.open("to", "_blank");
+    }
+}
+</script>
+
+
 <template>
-  <button>
-    <img class="social-icon" alt="twitter" src="../assets/img/Twitter.png">
+  <button @click="openLink">
+    <img class="social-icon" :src="img" :alt="alt">
     <div></div>
   </button>
 </template>

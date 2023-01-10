@@ -23,5 +23,9 @@ export default defineNuxtConfig({
         { rel: "stylesheet" , href: "https://cdn.jsdelivr.net/gh/filipelinhares/ress@latest/dist/ress.min.css" }
       ],
   }
-  }
+  },
+  build: {
+    transpile: ['components']
+  },
+
 })
