@@ -1,43 +1,36 @@
-<script setup lang="ts">
+<template>
+  <a :href="to" target="_blank">
+    <img :src="img" :alt="alt" class="social-icon">
+    <div></div>
+  </a>
+</template>
 
+
+<script setup lang="ts">
 interface Props {
   img: string;
   alt: string;
   to: string;
-  size: number;
+  size: string;
 }
-
 const props = withDefaults(defineProps<Props>(), {
   img: "/",
   alt: "",
-  to: "",
-  size: 64,
+  to: "/",
+  size: "64px",
 });
-
-const openLink = () => {
-  openLink(); {
-      window.open("to", "_blank");
-    }
-}
 </script>
 
 
-<template>
-  <button @click="openLink">
-    <img class="social-icon" :src="img" :alt="alt">
-    <div></div>
-  </button>
-</template>
-
 <style lang="scss" scoped>
-button {
+a {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 64px;
-  height: 64px;
-  border-radius: 32px;
+  width: size;
+  height: size;
+  border-radius: 9999px;
 
   &:focus-visible {
     outline: 2px solid $focused-default;

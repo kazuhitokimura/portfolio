@@ -5,18 +5,20 @@
     <h2>Designer</h2>
     <ul>
       <li>
-        <SocialBtn img="../assets/img/Twitter.png" alt= "twitter" to= "https://twitter.com/kimurasu02" />
+        <SocialBtn img="_nuxt/assets/img/note.png" alt="note" to="https://note.com/kazhto43" />
       </li>
       <li>
-        <SocialBtn img="../assets/img/note.png" alt= "note" to= "https://note.com/kazhto43" />
+        <SocialBtn img="_nuxt/assets/img/github.png" alt="github" to="https://github.com/kazuhitokimura" />
       </li>
       <li>
-        <SocialBtn img="../assets/img/github.png" alt= "github" to= "https://github.com/kazuhitokimura" />
+        <SocialBtn img="_nuxt/assets/img/Twitter.png" alt="twitter" to="https://twitter.com/kimurasu02" />
       </li>
     </ul>
   </div>
-
 </template>
+
+<script setup lang="ts">
+</script>
 
 <style lang="scss" scoped>
 h1 {
@@ -64,6 +66,6 @@ li {
 .profile-icon {
   width: 164px;
   height: 164px;
-  border-radius: 82px;
+  border-radius: 9999px;
 }
 </style>
