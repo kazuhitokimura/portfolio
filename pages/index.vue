@@ -1,6 +1,5 @@
 <template>
   <div class="whole-wrapper">
-    <Loading />
     <ProfileCard />
   </div>
 </template>

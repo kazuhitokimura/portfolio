@@ -1,5 +1,5 @@
 <template>
-  <a :href="to" target="_blank">
+  <a :href="to" target="_blank" >
     <img :src="img" :alt="alt" class="social-icon">
     <div></div>
   </a>
@@ -11,14 +11,14 @@ interface Props {
   img: string;
   alt: string;
   to: string;
-  size: string;
 }
 const props = withDefaults(defineProps<Props>(), {
   img: "/",
   alt: "",
   to: "/",
-  size: "64px",
 });
+
+const size = ref("size");
 </script>
 
 
@@ -28,8 +28,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: size;
-  height: size;
+  width: v-bind(size);
   border-radius: 9999px;
 
   &:focus-visible {
@@ -61,8 +60,8 @@ a {
   }
 
   .social-icon {
-    width: 64px;
     height: 64px;
+    width: 64px;
     border-radius: 32px;
   }
 }

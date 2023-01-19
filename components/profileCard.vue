@@ -5,7 +5,7 @@
     <h2>Designer</h2>
     <ul>
       <li>
-        <SocialBtn img="_nuxt/assets/img/note.png" alt="note" to="https://note.com/kazhto43" />
+        <SocialBtn img="_nuxt/assets/img/note.png" alt="note" to="https://note.com/kazhto43" size="40px"/>
       </li>
       <li>
         <SocialBtn img="_nuxt/assets/img/github.png" alt="github" to="https://github.com/kazuhitokimura" />
