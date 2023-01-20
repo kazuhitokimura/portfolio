@@ -1,5 +1,5 @@
 <template>
-  <a :href="to" target="_blank" >
+  <a :href="to" target="_blank">
     <img :src="img" :alt="alt" class="social-icon">
     <div></div>
   </a>
@@ -60,9 +60,9 @@ a {
   }
 
   .social-icon {
-    height: 64px;
-    width: 64px;
-    border-radius: 32px;
+    border-radius: 9999px;
+    width: 100%;
+    height: 100%;
   }
 }
 </style>

@@ -46,6 +46,8 @@ ul {
 
 li {
   list-style: none;
+  width: 64px;
+  height: 64px;
 }
 
 .profile-card {
