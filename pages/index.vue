@@ -14,10 +14,4 @@
   background-color: $bg-yellow;
 }
 
-@media (max-width: 480px) {
-  .whole-wrapper {
-    align-items: flex-start;
-  }
-}
-
 </style>

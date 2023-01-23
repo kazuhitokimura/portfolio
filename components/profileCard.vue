@@ -75,16 +75,16 @@ li {
   .profile-card {
     margin: 16px;
     width: 100%;
-    padding: 80px 20px 100px 20px;
+    padding: 80px 24px 100px 24px;
     max-width: 640px;
   }
 }
 
 @media (max-width: 480px) {
   .profile-card {
-    margin: 16px;
+    margin: 16px 16px 32px 16px;
     width: 100%;
-    padding: 80px 20px 100px 20px;
+    padding: 40px 20px 72px 20px;
   }
 
   ul {
