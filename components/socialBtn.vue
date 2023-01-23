@@ -18,7 +18,6 @@ const props = withDefaults(defineProps<Props>(), {
   to: "/",
 });
 
-const size = ref("size");
 </script>
 
 
@@ -28,7 +27,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: v-bind(size);
   border-radius: 9999px;
 
   &:focus-visible {

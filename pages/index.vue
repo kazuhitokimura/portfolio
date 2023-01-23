@@ -5,7 +5,7 @@
 </template>
 
 <style lang="scss" scoped>
-.whole-wrapper{
+.whole-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,4 +13,11 @@
   width: 100vw;
   background-color: $bg-yellow;
 }
+
+@media (max-width: 480px) {
+  .whole-wrapper {
+    align-items: flex-start;
+  }
+}
+
 </style>

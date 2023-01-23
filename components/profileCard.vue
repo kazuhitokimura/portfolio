@@ -5,7 +5,7 @@
     <h2>Designer</h2>
     <ul>
       <li>
-        <SocialBtn img="_nuxt/assets/img/note.png" alt="note" to="https://note.com/kazhto43" size="40px"/>
+        <SocialBtn img="_nuxt/assets/img/note.png" alt="note" to="https://note.com/kazhto43" />
       </li>
       <li>
         <SocialBtn img="_nuxt/assets/img/github.png" alt="github" to="https://github.com/kazuhitokimura" />
@@ -22,14 +22,14 @@
 
 <style lang="scss" scoped>
 h1 {
-  margin-top: 32px;
+  margin-top: 24px;
   font-family: $EN-sans-serif;
   text-align: center;
   color: $text-main;
 }
 
 h2 {
-  margin-top: 24px;
+  margin-top: 20px;
   font-family: $EN-serif;
   text-align: center;
   color: $text-sub;
@@ -55,7 +55,7 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
+  margin: 16px 16px 40px 16px;
   padding: 80px 80px 100px 80px;
   width: 640px;
   border: 1px solid $border-yellow;
@@ -70,4 +70,32 @@ li {
   height: 164px;
   border-radius: 9999px;
 }
+
+@media (max-width: 960px) {
+  .profile-card {
+    margin: 16px;
+    width: 100%;
+    padding: 80px 20px 100px 20px;
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    margin: 16px;
+    width: 100%;
+    padding: 80px 20px 100px 20px;
+  }
+
+  ul {
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+
+  li{
+    width: 56px;
+    height: 56px;
+  }
+}
 </style>
+
