@@ -15,7 +15,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 <style lang="scss" scoped>
 .tooltip{
-  background-color: $surface-yellow;
-  color: $text-main;
+  background-color: $gray-800;
+  color: $text-white;
 }
 </style>
