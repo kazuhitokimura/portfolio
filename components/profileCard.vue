@@ -1,6 +1,6 @@
 <template>
   <div class="profile-card">
-    <img class="profile-icon" alt="profile-icon" src="../assets/img/profileicon.JPG">
+    <img class="profile-icon" alt="profile-icon" src="../assets/img/profileIcon.png">
     <h1>Kazuhito Kimura</h1>
     <h2>Designer</h2>
     <ul>
