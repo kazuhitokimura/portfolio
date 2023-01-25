@@ -18,6 +18,7 @@
 </template>
 
 <script setup lang="ts">
+
 </script>
 
 <style lang="scss" scoped>
@@ -92,7 +93,7 @@ li {
     flex-wrap: wrap;
   }
 
-  li{
+  li {
     width: 56px;
     height: 56px;
   }
