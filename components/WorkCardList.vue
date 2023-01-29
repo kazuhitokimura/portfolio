@@ -1,6 +1,9 @@
 <template>
   <div class="work-card-list">
     <WorkCard />
+    <WorkCard />
+    <WorkCard />
+    <WorkCard />
   </div>
 </template>
 
@@ -10,8 +13,10 @@
 <style lang="scss" scoped>
 .work-card-list {
   display: grid;
-  grid-gap: 12px;
+  column-gap: 32px;
+  row-gap: 44px;
   grid-template-columns: 1fr 1fr;
   width: 900px;
+  margin-left: 56px;
 }
 </style>

@@ -2,7 +2,7 @@
   <div class="work-card">
     <div class="thumbnail"></div>
     <div class="contents-wrapper">
-      <div class="contents"></div>
+      <div class="contents">テキストテキスト</div>
     </div>
   </div>
 </template>
@@ -17,9 +17,11 @@
   align-items: center;
   border: 1px solid $border-yellow;
   border-radius: 8px;
+  overflow:hidden;
+  background-color: $bg-white;
 
   .thumbnail {
-    background: $yellow-700;
+    background: $gray-200;
     width: 100%;
     aspect-ratio: 16 / 9;
     text-overflow: ellipsis;
@@ -31,7 +33,6 @@
 
     .contents {
       background: #FFE8E8;
-      height: 120px;
       width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
