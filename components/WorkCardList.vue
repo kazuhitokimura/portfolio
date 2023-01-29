@@ -10,11 +10,8 @@
 <style lang="scss" scoped>
 .work-card-list {
   display: grid;
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-top: 12px;
   grid-gap: 12px;
-  grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+  grid-template-columns: 1fr 1fr;
   width: 900px;
 }
 </style>
