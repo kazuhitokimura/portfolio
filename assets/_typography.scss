@@ -15,7 +15,7 @@ $EN-sans-serif: "Helvetica Neue", "Arial", serif;
 h1{
   font-size: 40px;
   font-weight: 600;
-  line-height: 48px;
+  line-height: 60px;
   margin: 0px;
 }
 
@@ -81,4 +81,13 @@ h6{
   font-weight: 300;
   line-height: 18px;
   margin: 0px;
+}
+
+@media (max-width: 480px) {
+  h1{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    margin: 0px;
+  }
 }
