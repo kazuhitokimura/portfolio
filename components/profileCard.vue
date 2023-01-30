@@ -30,7 +30,7 @@ h1 {
 }
 
 h2 {
-  margin-top: 20px;
+  margin-top: 16px;
   font-family: $EN-serif;
   text-align: center;
   color: $text-sub;
@@ -87,6 +87,10 @@ li {
     width: 100%;
     padding: 40px 20px 72px 20px;
   }
+
+  h2 {
+  margin-top: 12px;
+}
 
   ul {
     gap: 32px;
