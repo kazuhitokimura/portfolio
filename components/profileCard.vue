@@ -3,17 +3,7 @@
     <img class="profile-icon" alt="profile-icon" src="../assets/img/profileIcon.png">
     <h1>Kazuhito Kimura</h1>
     <h2>Designer</h2>
-    <ul>
-      <li>
-        <SocialBtn img="_nuxt/assets/img/note.png" alt="note" to="https://note.com/kazhto43" />
-      </li>
-      <li>
-        <SocialBtn img="_nuxt/assets/img/github.png" alt="github" to="https://github.com/kazuhitokimura" />
-      </li>
-      <li>
-        <SocialBtn img="_nuxt/assets/img/Twitter.png" alt="twitter" to="https://twitter.com/kimurasu02" />
-      </li>
-    </ul>
+    <SocialBtn />
   </div>
 </template>
 
@@ -91,16 +81,6 @@ li {
   h2 {
   margin-top: 12px;
 }
-
-  ul {
-    gap: 32px;
-    flex-wrap: wrap;
-  }
-
-  li {
-    width: 56px;
-    height: 56px;
-  }
 }
 </style>
 
