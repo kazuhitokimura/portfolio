@@ -1,72 +1,3 @@
-<!--
-<template>
-  <a :href="to" target="_blank">
-    <img :src="img" :alt="alt" class="social-icon">
-    <div></div>
-  </a>
-</template>
-
-
-<script setup lang="ts">
-interface Props {
-  img: string;
-  alt: string;
-  to: string;
-}
-const props = withDefaults(defineProps<Props>(), {
-  img: "/",
-  alt: "",
-  to: "/",
-});
-
-</script>
-
-
-<style lang="scss" scoped>
-a {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9999px;
-
-  &:focus-visible {
-    outline: 2px solid $focused-default;
-    outline-offset: 2px;
-  }
-
-  div {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 32px;
-    opacity: 0;
-    left: 0;
-    top: 0;
-    background: black;
-    color: $text-white;
-
-    &:hover {
-      opacity: 0.08;
-    }
-
-    &:active {
-      opacity: 0.16;
-    }
-  }
-
-  .social-icon {
-    border-radius: 9999px;
-    width: 100%;
-    height: 100%;
-  }
-}
-</style>
--->
-
 <template>
   <ul>
     <li v-for="btn in btns" :key="btn.alt">
@@ -81,10 +12,13 @@ a {
 </template>
 
 <script setup lang="ts">
+const generateImgPath = (fileName: string): string => {
+  return new URL(`../assets/img/${fileName}.png`, import.meta.url).href
+}
 const btns: Array<{ to: string; img: string; alt: string }> = [
   {
     to: 'https://note.com/kazhto43',
-    img: '_nuxt/assets/img/note.png',
+    img: generateImgPath("note"),
     alt: 'note'
   },
   {
@@ -155,3 +89,74 @@ li {
   list-style: none;
 }
 </style>
+
+
+<!--
+リストレンダリングではなくPropsのコード
+<template>
+  <a :href="to" target="_blank">
+    <img :src="img" :alt="alt" class="social-icon">
+    <div></div>
+  </a>
+</template>
+
+
+<script setup lang="ts">
+interface Props {
+  img: string;
+  alt: string;
+  to: string;
+}
+const props = withDefaults(defineProps<Props>(), {
+  img: "/",
+  alt: "",
+  to: "/",
+});
+
+</script>
+
+
+<style lang="scss" scoped>
+a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+
+  &:focus-visible {
+    outline: 2px solid $focused-default;
+    outline-offset: 2px;
+  }
+
+  div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    opacity: 0;
+    left: 0;
+    top: 0;
+    background: black;
+    color: $text-white;
+
+    &:hover {
+      opacity: 0.08;
+    }
+
+    &:active {
+      opacity: 0.16;
+    }
+  }
+
+  .social-icon {
+    border-radius: 9999px;
+    width: 100%;
+    height: 100%;
+  }
+}
+</style>
+-->
