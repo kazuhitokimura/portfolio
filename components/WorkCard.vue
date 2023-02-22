@@ -1,27 +1,73 @@
 <template>
-  <div class="work-card">
-    <div class="thumbnail"></div>
-    <div class="contents-wrapper">
-      <div class="contents">テキストテキスト</div>
-    </div>
-  </div>
+  <ul class="work-card-list">
+    <li v-for="card in cards" :key="card.alt">
+      <a :href="card.to" target="blank" class="work-card">
+        <div class="thumbnail"></div>
+        <div class="contents-wrapper">
+          <div class="contents">テキストテキスト</div>
+        </div>
+      </a>
+    </li>
+  </ul>
 </template>
 
 <script setup lang="ts">
+const generateImgPath = (fileName: string): string => {
+  return new URL(`../assets/img/${fileName}.png`, import.meta.url).href
+}
+const cards: Array<{ to: string; img: string; alt: string }> = [
+  {
+    to: '/',
+    img: generateImgPath(""),
+    alt: ''
+  },
+  {
+    to: '/',
+    img: generateImgPath(""),
+    alt: ''
+  },
+  {
+    to: '/',
+    img: generateImgPath(""),
+    alt: ''
+  },
+]
 </script>
 
 <style lang="scss" scoped>
+.work-card-list {
+  display: grid;
+  column-gap: 32px;
+  row-gap: 44px;
+  grid-template-columns: 1fr 1fr;
+  width: 804px;
+  margin-left: 56px;
+  list-style: none;
+}
+
 .work-card {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid $border-yellow;
   border-radius: 8px;
-  overflow:hidden;
+  overflow: hidden;
   background-color: $bg-white;
+  text-decoration: none;
+
+  &:focus-visible {
+    outline: 2px solid $focused-default;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: $text-main;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+  }
 
   .thumbnail {
-    background: $gray-200;
+    background: $gray-100;
     width: 100%;
     aspect-ratio: 16 / 9;
     text-overflow: ellipsis;
@@ -32,11 +78,13 @@
     padding: 12px;
 
     .contents {
-      background: #FFE8E8;
       width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
+      font-family: $JP-serif;
+      color: $text-main;
+      @include body1();
     }
   }
 }
