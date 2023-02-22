@@ -23,12 +23,12 @@ const btns: Array<{ to: string; img: string; alt: string }> = [
   },
   {
     to: 'https://github.com/kazuhitokimura',
-    img: '_nuxt/assets/img/github.png',
+    img: generateImgPath("github"),
     alt: 'github'
   },
   {
     to: 'https://twitter.com/kimurasu02',
-    img: '_nuxt/assets/img/Twitter.png',
+    img: generateImgPath("Twitter"),
     alt: 'twitter'
   },
 ]
