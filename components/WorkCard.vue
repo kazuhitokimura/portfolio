@@ -42,6 +42,7 @@ const cards: Array<{ to: string; img: string; alt: string }> = [
   grid-template-columns: 1fr 1fr;
   width: 804px;
   margin-left: 56px;
+  margin-right: 16px;
   list-style: none;
 }
 
@@ -58,6 +59,8 @@ const cards: Array<{ to: string; img: string; alt: string }> = [
   &:focus-visible {
     outline: 2px solid $focused-default;
     outline-offset: 2px;
+    text-decoration: underline;
+    text-decoration-color: $text-main;
   }
 
   &:hover {

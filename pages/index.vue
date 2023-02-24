@@ -13,5 +13,4 @@
   width: 100vw;
   background-color: $bg-yellow;
 }
-
 </style>
