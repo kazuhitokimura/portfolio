@@ -13,7 +13,7 @@
 
 <script setup lang="ts">
 const generateImgPath = (fileName: string): string => {
-  return new URL(`../assets/img/${fileName}.png`, import.meta.url).href
+  return new URL(`/_nuxt/assets/img/${fileName}.png`, import.meta.url).href
 }
 const btns: Array<{ to: string; img: string; alt: string }> = [
   {
