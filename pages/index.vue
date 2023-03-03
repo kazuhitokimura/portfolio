@@ -1,16 +1,18 @@
 <template>
-  <div class="whole-wrapper">
-    <ProfileCard />
+  <div>
+    <Header />
+    <div class="whole-wrapper">
+      <ProfileCard />
+      <WorkCard />
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
 .whole-wrapper {
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
   width: 100vw;
-  background-color: $bg-yellow;
+  gap: 56px;
 }
 </style>

@@ -4,8 +4,11 @@
       <a :href="card.to" target="blank" class="work-card">
         <div class="thumbnail"></div>
         <div class="contents-wrapper">
-          <div class="contents">テキストテキスト</div>
-        </div>
+            <div class="title-wrapper">
+              <h2>{{ card.title }}</h2>
+              <p>{{ card.type }}</p>
+            </div>
+          </div>
       </a>
     </li>
   </ul>
@@ -13,20 +16,40 @@
 
 <script setup lang="ts">
 const generateImgPath = (fileName: string): string => {
-  return new URL(`../assets/img/${fileName}.png`, import.meta.url).href
+  return new URL(`/assets/img/${fileName}.png`, import.meta.url).href
 }
-const cards: Array<{ to: string; img: string; alt: string }> = [
+const cards: Array<{ title: string; type: string; to: string; img: string; alt: string }> = [
   {
+    title: 'タイトル',
+    type: 'Web',
     to: '/',
     img: generateImgPath(""),
     alt: ''
   },
   {
+    title: 'タイトル',
+    type: 'Web',
     to: '/',
     img: generateImgPath(""),
     alt: ''
   },
   {
+    title: 'タイトル',
+    type: 'Web',
+    to: '/',
+    img: generateImgPath(""),
+    alt: ''
+  },
+  {
+    title: 'タイトル',
+    type: 'Web',
+    to: '/',
+    img: generateImgPath(""),
+    alt: ''
+  },
+  {
+    title: 'タイトル',
+    type: 'Web',
     to: '/',
     img: generateImgPath(""),
     alt: ''
@@ -41,8 +64,7 @@ const cards: Array<{ to: string; img: string; alt: string }> = [
   row-gap: 44px;
   grid-template-columns: 1fr 1fr;
   width: 804px;
-  margin-left: 56px;
-  margin-right: 16px;
+  margin: 120px 16px 80px 16px;
   list-style: none;
 }
 
@@ -64,8 +86,6 @@ const cards: Array<{ to: string; img: string; alt: string }> = [
   }
 
   &:hover {
-    text-decoration: underline;
-    text-decoration-color: $text-main;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
   }
 
@@ -77,17 +97,30 @@ const cards: Array<{ to: string; img: string; alt: string }> = [
   }
 
   .contents-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
     padding: 12px;
 
-    .contents {
+    .title-wrapper {
       width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
       white-space: nowrap;
-      font-family: $JP-serif;
-      color: $text-main;
-      @include body1();
+
+      h2 {
+        font-family: $JP-serif;
+        color: $text-main;
+        @include body1();
+      }
+
+      p {
+        font-family: $JP-serif;
+        color: $text-sub;
+        @include caption();
+        text-decoration: none;
+      }
     }
   }
 }

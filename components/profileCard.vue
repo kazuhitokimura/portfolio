@@ -44,15 +44,10 @@ li {
 .profile-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  margin: 16px 24px 40px 24px;
-  padding: 80px 80px 100px 80px;
-  width: 640px;
-  border: 1px solid $border-yellow;
-  background-color: $bg-white;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
-  border-radius: 16px;
+  margin: 120px 16px 0px 16px;
+  padding: 80px 40px;
   box-sizing: border-box;
 }
 
