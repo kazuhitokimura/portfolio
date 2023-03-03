@@ -95,8 +95,9 @@ const cards: Array<{ title: string; type: string; to: string; img: string; alt: 
       span {
         opacity: 1;
       }
-      .title-wrapper{
-        h2{
+
+      .title-wrapper {
+        h2 {
           text-decoration: underline;
           text-decoration-color: $text-main;
         }
@@ -143,9 +144,30 @@ const cards: Array<{ title: string; type: string; to: string; img: string; alt: 
     span {
       font-size: 24px;
       height: 24px;
-      color: $text-sub;
+      color: $text-main;
       opacity: 0;
     }
+  }
+}
+
+@media (max-width: 960px) {
+  .work-card-list {
+    margin: 0px 16px 80px 16px;
+    display: grid;
+    column-gap: 32px;
+    row-gap: 44px;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-card-list {
+    margin: 0px 16px 80px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 90%;
   }
 }
 </style>

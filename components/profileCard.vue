@@ -31,7 +31,6 @@ ul {
   justify-content: center;
   flex-direction: row;
   padding: 0px;
-  gap: 64px;
   margin-top: 48px;
 }
 
@@ -46,8 +45,9 @@ li {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 400px;
   margin: 120px 16px 0px 16px;
-  padding: 80px 40px;
+  padding: 80px 20px;
   box-sizing: border-box;
 }
 
@@ -59,7 +59,6 @@ li {
 
 @media (max-width: 960px) {
   .profile-card {
-    margin: 16px;
     width: 100%;
     padding: 80px 24px 100px 24px;
     max-width: 640px;
@@ -68,14 +67,14 @@ li {
 
 @media (max-width: 480px) {
   .profile-card {
-    margin: 16px 16px 32px 16px;
+    margin: 88px 16px 32px 16px;
     width: 100%;
-    padding: 40px 20px 72px 20px;
+    padding: 40px 8px 40px 8px;
   }
 
   h2 {
-  margin-top: 12px;
-}
+    margin-top: 12px;
+  }
 }
 </style>
 
