@@ -4,11 +4,14 @@
       <a :href="card.to" target="blank" class="work-card">
         <div class="thumbnail"></div>
         <div class="contents-wrapper">
-            <div class="title-wrapper">
-              <h2>{{ card.title }}</h2>
-              <p>{{ card.type }}</p>
-            </div>
+          <div class="title-wrapper">
+            <h2>{{ card.title }}</h2>
+            <p>{{ card.type }}</p>
           </div>
+          <span class="material-symbols-outlined">
+            open_in_new
+          </span>
+        </div>
       </a>
     </li>
   </ul>
@@ -87,6 +90,18 @@ const cards: Array<{ title: string; type: string; to: string; img: string; alt: 
 
   &:hover {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+
+    .contents-wrapper {
+      span {
+        opacity: 1;
+      }
+      .title-wrapper{
+        h2{
+          text-decoration: underline;
+          text-decoration-color: $text-main;
+        }
+      }
+    }
   }
 
   .thumbnail {
@@ -99,9 +114,11 @@ const cards: Array<{ title: string; type: string; to: string; img: string; alt: 
   .contents-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
     padding: 12px;
+    gap: 4px;
+    width: 100%;
 
     .title-wrapper {
       width: 100%;
@@ -121,6 +138,13 @@ const cards: Array<{ title: string; type: string; to: string; img: string; alt: 
         @include caption();
         text-decoration: none;
       }
+    }
+
+    span {
+      font-size: 24px;
+      height: 24px;
+      color: $text-sub;
+      opacity: 0;
     }
   }
 }
