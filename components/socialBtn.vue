@@ -2,7 +2,7 @@
   <ul>
     <li v-for="btn in btns" :key="btn.alt">
       <div>
-        <a :href="btn.to" target="blank">
+        <a :href="btn.to" target="blank" rel="noopener">
           <img :src="btn.img" :alt="btn.alt" class="social-icon">
           <div></div>
         </a>

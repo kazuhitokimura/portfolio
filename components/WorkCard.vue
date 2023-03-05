@@ -1,7 +1,7 @@
 <template>
   <ul class="work-card-list">
     <li v-for="card in cards" :key="card.alt">
-      <a :href="card.to" target="blank" class="work-card">
+      <a :href="card.to" target="blank" class="work-card" rel="noopener">
         <img :src="card.img" :alt="card.alt" class="thumbnail">
         <div class="contents-wrapper">
           <div class="title-wrapper">
@@ -53,7 +53,7 @@ const cards: Array<{ title: string; type: string; to: string; img: string; alt: 
   {
     title: 'WireFrame Template',
     type: 'Private Work',
-    to: '/',
+    to: 'https://www.figma.com/community/file/1153318655827378317',
     img: generateImgPath("wf-template"),
     alt: 'thumbnail'
   },
