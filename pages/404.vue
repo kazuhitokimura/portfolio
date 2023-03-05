@@ -16,6 +16,5 @@ const path = location.href
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-color: $bg-yellow;
 }
 </style>

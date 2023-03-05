@@ -166,7 +166,6 @@ const cards: Array<{ title: string; type: string; to: string; img: string; alt: 
     margin: 0px 16px 80px 16px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
     width: 90%;
   }
 }
