@@ -5,6 +5,7 @@
       <ProfileCard />
       <WorkCard />
     </div>
+    <Footer/>
   </div>
 </template>
 

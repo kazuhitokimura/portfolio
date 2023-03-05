@@ -9,7 +9,7 @@
 <style lang="scss" scoped>
 header{
   height: 72px;
-  width: 100vw;
+  width: 100%;
   background-color: $surface-white;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
   position: fixed;

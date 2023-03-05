@@ -2,7 +2,7 @@
   <ul class="work-card-list">
     <li v-for="card in cards" :key="card.alt">
       <a :href="card.to" target="blank" class="work-card">
-        <div class="thumbnail"></div>
+        <img :src="card.img" :alt="card.alt" class="thumbnail">
         <div class="contents-wrapper">
           <div class="title-wrapper">
             <h2>{{ card.title }}</h2>
@@ -23,39 +23,39 @@ const generateImgPath = (fileName: string): string => {
 }
 const cards: Array<{ title: string; type: string; to: string; img: string; alt: string }> = [
   {
-    title: 'タイトル',
-    type: 'Web',
-    to: '/',
-    img: generateImgPath(""),
-    alt: ''
+    title: 'PartnerSuccess',
+    type: 'Web,UI',
+    to: 'https://partnersuccess.jp/',
+    img: generateImgPath("partnersuccess"),
+    alt: 'thumbnail'
   },
   {
-    title: 'タイトル',
-    type: 'Web',
-    to: '/',
-    img: generateImgPath(""),
-    alt: ''
+    title: 'AllianceHack',
+    type: 'Web,Banner,Logo',
+    to: 'https://partnersuccess.jp/media',
+    img: generateImgPath("alliancehack"),
+    alt: 'thumbnail'
   },
   {
-    title: 'タイトル',
+    title: '双日ジェクト',
     type: 'Web',
-    to: '/',
-    img: generateImgPath(""),
-    alt: ''
+    to: 'https://www.jectcorp.com/',
+    img: generateImgPath("sojitz-ject"),
+    alt: 'thumbnail'
   },
   {
-    title: 'タイトル',
-    type: 'Web',
-    to: '/',
-    img: generateImgPath(""),
-    alt: ''
+    title: 'OOUI workout',
+    type: 'Private Work',
+    to: 'https://note.com/kazhto43/m/m25736918d591',
+    img: generateImgPath("ooui-workout"),
+    alt: 'thumbnail'
   },
   {
-    title: 'タイトル',
-    type: 'Web',
+    title: 'WireFrame Template',
+    type: 'Private Work',
     to: '/',
-    img: generateImgPath(""),
-    alt: ''
+    img: generateImgPath("wf-template"),
+    alt: 'thumbnail'
   },
 ]
 </script>
@@ -67,7 +67,7 @@ const cards: Array<{ title: string; type: string; to: string; img: string; alt: 
   row-gap: 44px;
   grid-template-columns: 1fr 1fr;
   width: 804px;
-  margin: 120px 16px 80px 16px;
+  margin: 120px 16px 160px 16px;
   list-style: none;
 }
 
@@ -84,8 +84,18 @@ const cards: Array<{ title: string; type: string; to: string; img: string; alt: 
   &:focus-visible {
     outline: 2px solid $focused-default;
     outline-offset: 2px;
-    text-decoration: underline;
-    text-decoration-color: $text-main;
+    .contents-wrapper {
+      span {
+        opacity: 1;
+      }
+
+      .title-wrapper {
+        h2 {
+          text-decoration: underline;
+          text-decoration-color: $text-main;
+        }
+      }
+    }
   }
 
   &:hover {
@@ -152,7 +162,7 @@ const cards: Array<{ title: string; type: string; to: string; img: string; alt: 
 
 @media (max-width: 960px) {
   .work-card-list {
-    margin: 0px 16px 80px 16px;
+    margin: 0px 16px 120px 16px;
     display: grid;
     column-gap: 32px;
     row-gap: 44px;
