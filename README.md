@@ -40,6 +40,3 @@ npm run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-# UI Design
-https://www.figma.com/file/9z1aT8yynmbicz1pmNd3gA/portfolio?node-id=2%3A352&t=btf1HrStvnsgCRkm-1
