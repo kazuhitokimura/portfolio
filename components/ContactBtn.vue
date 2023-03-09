@@ -3,7 +3,9 @@
     <span class="material-symbols-outlined">
       mail
     </span>
-    CONTACT
+    <span class="label">
+      CONTACT
+    </span>
   </button>
 </template>
 
@@ -42,10 +44,21 @@ button {
     background-color: $overlay-pressed;
   }
 
-  span {
+  .material-symbols-outlined {
     font-size: 24px;
     height: 24px;
     color: $text-main;
+  }
+}
+
+@media (max-width: 480px) {
+
+  button {
+    padding: 10px;
+
+    .label {
+      display: none
+    }
   }
 }
 </style>
