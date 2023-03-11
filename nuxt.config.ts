@@ -16,7 +16,7 @@ export default defineNuxtConfig({
       viewport: "width=device-width",
       meta: [
         { name: 'description', content: '木村一仁のポートフォリオ' },
-        { hid: 'og:image', property: 'og:image', content: '' }
+        { hid: 'og:image', property: 'og:image', content: '/Users/kimurakazuhito/Desktop/portfolio/public/ogp.png' }
       ],
       link: [
         { rel: "icon", type: "image/png", href: "/favicon.png" },
