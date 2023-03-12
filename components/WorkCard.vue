@@ -2,7 +2,7 @@
   <ul class="work-card-list">
     <li v-for="card in cards" :key="card.alt">
       <a :href="card.to" target="blank" class="work-card" rel="noopener">
-        <img :src="card.img" :alt="card.alt" class="thumbnail">
+        <img :src="`/assets/img/${card.img}.png`" :alt="card.alt" class="thumbnail">
         <div class="contents-wrapper">
           <div class="title-wrapper">
             <h2>{{ card.title }}</h2>
@@ -18,43 +18,40 @@
 </template>
 
 <script setup lang="ts">
-const generateImgPath = (fileName: string): string => {
-  return new URL(`/assets/img/${fileName}.png`, import.meta.url).href
-}
 const cards: Array<{ title: string; type: string; to: string; img: string; alt: string }> = [
   {
     title: 'PartnerSuccess',
     type: 'Web,UI',
     to: 'https://partnersuccess.jp/',
-    img: generateImgPath("partnersuccess"),
+    img: 'partnersuccess',
     alt: 'thumbnail'
   },
   {
     title: 'AllianceHack',
     type: 'Web,Banner,Logo',
     to: 'https://partnersuccess.jp/media',
-    img: generateImgPath("alliancehack"),
+    img: 'alliancehack',
     alt: 'thumbnail'
   },
   {
     title: '双日ジェクト',
     type: 'Web',
     to: 'https://www.jectcorp.com/',
-    img: generateImgPath("sojitz-ject"),
+    img: 'sojitz-ject',
     alt: 'thumbnail'
   },
   {
     title: 'OOUI workout',
     type: 'Private Work',
     to: 'https://note.com/kazhto43/m/m25736918d591',
-    img: generateImgPath("ooui-workout"),
+    img: 'ooui-workout',
     alt: 'thumbnail'
   },
   {
     title: 'WireFrame Template',
     type: 'Private Work',
     to: 'https://www.figma.com/community/file/1153318655827378317',
-    img: generateImgPath("wf-template"),
+    img: 'wf-template',
     alt: 'thumbnail'
   },
 ]
